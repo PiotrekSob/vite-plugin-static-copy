@@ -12,7 +12,8 @@ export type {
   Target
 } from './options'
 
-export const viteStaticCopy = (options: ViteStaticCopyOptions): Plugin[] => {
+
+export default viteStaticCopy = (options: ViteStaticCopyOptions): Plugin[] => {
   const resolvedOptions = resolveOptions(options)
 
   return [servePlugin(resolvedOptions), buildPlugin(resolvedOptions)]
