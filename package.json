@@ -14,6 +14,7 @@
   },
   "scripts": {
     "dev": "tsup --watch",
+    "prepare" "tsup",
     "build": "tsup",
     "lint": "eslint --cache .",
     "format": "prettier --write --cache .",
